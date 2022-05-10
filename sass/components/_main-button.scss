@@ -1,0 +1,20 @@
+.main-button {
+  min-width: 200px;
+  width: min-content;
+  align-self: center;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+  color: var(--light-color);
+  background-color: var(--primary-brand-color);
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1.88;
+  transition: background-color var(--transition-main);
+
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
+}

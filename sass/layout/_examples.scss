@@ -1,0 +1,102 @@
+.examples {
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 94px 0;
+  }
+  &__item {
+    --card-item: 1;
+    @media screen and (min-width: 768px) {
+      --card-item: 2;
+    }
+    @media screen and (min-width: 1200px) {
+      --card-item: 3;
+    }
+  }
+  &__link {
+    display: block;
+    transition: box-shadow var(--transition-main);
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+    &:focus .overline,
+    &:hover .overline {
+      transform: translateY(0);
+    }
+  }
+  &__text {
+    border-left: 1px solid #eeeeee;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    padding: 20px 24px;
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--dark-color);
+  }
+  &__type {
+    font-size: 16px;
+    line-height: 1.87;
+  }
+}
+.filter {
+  @media screen and (max-width: 767px) {
+    justify-content: start;
+  }
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+    @media screen and (max-width: 767px) {
+      &:nth-child(n + 4) {
+        margin-top: 15px;
+      }
+    }
+  }
+  &__button {
+    padding: 6px 22px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    background: #f5f4fa;
+    border-radius: 4px;
+    border: none;
+    transition: color var(--transition-main), background-color var(--transition-main),
+      box-shadow var(--transition-main);
+    &_active,
+    &:hover,
+    &:focus {
+      background-color: var(--primary-brand-color);
+      color: var(--light-color);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+.overline {
+  font-size: 18px;
+  line-height: 1.56;
+  color: #ffffff;
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  top: 0px;
+  padding: 63px 24px;
+  transform: translateY(100%);
+  transition: transform var(--transition-main);
+  overflow: auto;
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+}

@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+  color: var(--tertiary-light-color);
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color var(--transition-main), background-color var(--transition-main);
+    &:hover,
+    &:focus {
+      background-color: var(--primary-brand-color);
+      color: var(--light-color);
+    }
+  }
+  &__item + &__item {
+    margin-left: 10px;
+  }
+  &__svg {
+    fill: currentColor;
+  }
+}

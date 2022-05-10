@@ -1,0 +1,31 @@
+.customers {
+  &__list {
+    color: var(--tertiary-light-color);
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92px;
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: color var(--transition-main);
+    &:focus,
+    &:hover {
+      color: var(--primary-brand-color);
+    }
+  }
+  &__svg {
+    fill: currentColor;
+  }
+  &__item {
+    --card-item: 2;
+    @media screen and (min-width: 768px) {
+      --card-item: 3;
+    }
+    @media screen and (min-width: 1200px) {
+      --card-item: 6;
+    }
+  }
+}
