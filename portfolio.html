@@ -24,31 +24,28 @@
   <body>
     <header class="header">
       <div class="header-container container">
-        <a class="link logo" href="" lang="en">Web<span class="logo_black">Studio</span> </a>
-        <nav class="header-menu">
-          <ul class="header-menu__list list">
-            <li class="header-menu__item">
-              <a class="header-menu__link_active header-menu__link link" href="./index.html"
-                >Студия</a
+        <a class="link logo" href="./index.html" lang="en"
+          >Web<span class="logo_black">Studio</span>
+        </a>
+        <nav class="navigation">
+          <ul class="navigation__list list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link_active navigation__link link" href="./portfolio.html"
+                >Портфолио</a
               >
             </li>
-            <li class="header-menu__item">
-              <a class="header-menu__link link" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="header-menu__item">
-              <a class="header-menu__link link" href="">Контакты</a>
+            <li class="navigation__item">
+              <a class="navigation__link link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <button class="header__button_humburger" type="button">
-          <svg width="40" height="40">
-            <use href="./images/sprite.svg#humburger-menu"></use>
-          </svg>
-        </button>
         <ul class="header-address__list list">
           <li class="header-address__item">
             <a
-              class="header-address__link header-menu__link link"
+              class="navigation__link_address navigation__link link"
               lang="en"
               href="mailto:info@devstudio.com"
             >
@@ -59,7 +56,7 @@
             >
           </li>
           <li class="header-address__item">
-            <a class="header-address__link header-menu__link link" href="tel:+380961111111">
+            <a class="navigation__link_address navigation__link link" href="tel:+380961111111">
               <svg class="header-address_icon" width="10" height="16">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
@@ -67,6 +64,84 @@
             >
           </li>
         </ul>
+        <button
+          class="mobile__menu_open menu-toggle js-open-menu"
+          aria-expanded="false"
+          type="button"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/sprite.svg#humburger-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile__menu js-menu-container">
+        <div class="mobile__container container">
+          <button class="mobile__button_close js-close-menu">
+            <svg height="40px" width="40px">
+              <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile__list list">
+            <li class="mobile__item">
+              <a class="mobile__link link" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mobile__item">
+              <a class="mobile__link link" href="">Контакты</a>
+            </li>
+          </ul>
+          <ul class="mobail__list_address list">
+            <li class="mobile__item_address">
+              <a class="mobile__link_phone link" href="tel:+380961111111"> +38 096 111 11 11</a>
+            </li>
+            <li class="mobile__item_address">
+              <a class="mobile__link_email link" lang="en" href="mailto:info@devstudio.com">
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile__list_soc list">
+            <li class="mobile__item_soc">
+              <a
+                class="mobile__link_soc link"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                href=""
+                >Instagram
+              </a>
+            </li>
+            <li class="mobile__item_soc">
+              <a
+                class="mobile__link_soc link"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                href=""
+                >Twitter
+              </a>
+            </li>
+            <li class="mobile__item_soc">
+              <a
+                class="mobile__link_soc link"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                href=""
+                >Facebook
+              </a>
+            </li>
+            <li class="mobile__item_soc">
+              <a
+                class="mobile__link_soc link"
+                rel="noopener noreferrer nofollow"
+                target="_blank"
+                href=""
+                >LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -102,18 +177,27 @@
                 <div class="overline__wrapper">
                   <picture>
                     <source
-                      srcset="./images/parfolio/desktop/img.jpg 1x"
+                      srcset="
+                        ./images/partfolio/desktop/img.jpg    1x,
+                        ./images/partfolio/desktop/img@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img.jpg    1x,
+                        ./images/partfolio/tablet/img@2x.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/parfolio/tablet/img.jpg 1x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./images/parfolio/phone/img.jpg 1x"
+                      srcset="
+                        ./images/partfolio/mobile/img.jpg    1x,
+                        ./images/partfolio/mobile/img@2x.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/parfolio/phone/img.jpg" alt="сайт - 'Техноряк'" />
+                    <img src="./images/partfolio/mobile/img.jpg" alt="сайт - 'Техноряк'" />
                   </picture>
                   <p class="overline">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -137,18 +221,30 @@
                 <div class="overline__wrapper">
                   <picture>
                     <source
-                      srcset="./images/parfolio/desktop/img-1.jpg 1x"
+                      srcset="
+                        ./images/partfolio/desktop/img-1.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-1.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-1.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-1.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/parfolio/tablet/img-1.jpg 1x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./images/parfolio/phone/img-1.jpg 1x"
+                      srcset="
+                        ./images/partfolio/mobile/img-1.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-1.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/parfolio/phone/img-1.jpg" alt="дизайн постера" />
+                    <img
+                      src="./images/partfolio/mobile/img-1.jpg"
+                      alt="постер - New Orlean vs Golden Star"
+                    />
                   </picture>
                   <p class="overline">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -174,20 +270,29 @@
                 <div class="overline__wrapper">
                   <picture>
                     <source
-                      srcset="./images/parfolio/desktop/img-2.jpg 1x"
+                      srcset="
+                        ./images/partfolio/desktop/img-2.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-2.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-2.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-2.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/parfolio/tablet/img-2.jpg 1x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./images/parfolio/phone/img-2.jpg 1x"
+                      srcset="
+                        ./images/partfolio/mobile/img-2.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-2.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
                     <img
-                      src="./images/parfolio/phone/img-2.jpg"
-                      alt="приложение - 'Ресторан Seafood'"
+                      src="./images/partfolio/mobile/img-2.jpg"
+                      alt="приложение ресторана - 'Seafood'"
                     />
                   </picture>
                   <p class="overline">
@@ -212,18 +317,27 @@
                 <div class="overline__wrapper">
                   <picture>
                     <source
-                      srcset="./images/parfolio/desktop/img-3.jpg 1x"
+                      srcset="
+                        ./images/partfolio/desktop/img-3.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-3.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-3.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-3.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/parfolio/tablet/img-3.jpg 1x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./images/parfolio/phone/img-3.jpg 1x"
+                      srcset="
+                        ./images/partfolio/mobile/img-3.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-3.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/parfolio/phone/img-3.jpg" alt=""проект - 'Prime'"" />
+                    <img src="./images/partfolio/mobile/img-3.jpg" alt="проект - 'Prime" />
                   </picture>
                   <p class="overline">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -247,18 +361,27 @@
                 <div class="overline__wrapper">
                   <picture>
                     <source
-                      srcset="./images/parfolio/desktop/img-4.jpg 1x"
+                      srcset="
+                        ./images/partfolio/desktop/img-4.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-4.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-4.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-4.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/parfolio/tablet/img-4.jpg 1x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./images/parfolio/phone/img-4.jpg 1x"
+                      srcset="
+                        ./images/partfolio/mobile/img-4.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-4.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
-                    <img src="./images/parfolio/phone/img-4.jpg" alt="проект - 'Boxes'" />
+                    <img src="./images/partfolio/mobile/img-4.jpg" alt="приложение - 'Boxes'" />
                   </picture>
                   <p class="overline">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -282,19 +405,28 @@
                 <div class="overline__wrapper">
                   <picture>
                     <source
-                      srcset="./images/parfolio/desktop/img-5.jpg 1x"
+                      srcset="
+                        ./images/partfolio/desktop/img-5.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-5.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-5.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-5.jpg 2x
+                      "
                       media="(min-width: 768px)"
                     />
                     <source
-                      srcset="./images/parfolio/tablet/img-5.jpg 1x"
-                      media="(min-width: 768px)"
-                    />
-                    <source
-                      srcset="./images/parfolio/phone/img-5.jpg 1x"
+                      srcset="
+                        ./images/partfolio/mobile/img-5.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-5.jpg 2x
+                      "
                       media="(max-width: 767px)"
                     />
                     <img
-                      src="./images/parfolio/phone/img-5.jpg"
+                      src="./images/partfolio/mobile/img-5.jpg"
                       alt="сайт - 'Inspiration has no Borders'"
                     />
                   </picture>
@@ -318,11 +450,33 @@
                 target="_blank"
               >
                 <div class="overline__wrapper">
-                  <img
-                    width="370"
-                    src="./images/parfolio/img-5.jpg"
-                    alt="сайт - 'Inspiration has no Borders'"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/partfolio/desktop/img-6.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-6.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-6.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-6.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/mobile/img-6.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-6.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/partfolio/mobile/img-6.jpg"
+                      alt="дизайн издания - 'Limited Edition'"
+                    />
+                  </picture>
                   <p class="overline">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -343,7 +497,30 @@
                 target="_blank"
               >
                 <div class="overline__wrapper">
-                  <img width="370" src="./images/parfolio/img-7.jpg" alt="проект 'LAB'" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/partfolio/desktop/img-7.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-7.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-7.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-7.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/mobile/img-7.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-7.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img src="./images/partfolio/mobile/img-7.jpg" alt="проект - 'LAB'" />
+                  </picture>
                   <p class="overline">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -364,11 +541,33 @@
                 target="_blank"
               >
                 <div class="overline__wrapper">
-                  <img
-                    width="370"
-                    src="./images/parfolio/img-8.jpg"
-                    alt="приложение - 'Growing Business'"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/partfolio/desktop/img-8.jpg    1x,
+                        ./images/partfolio/desktop/img@2x-8.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/tablet/img-8.jpg    1x,
+                        ./images/partfolio/tablet/img@2x-8.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/partfolio/mobile/img-8.jpg    1x,
+                        ./images/partfolio/mobile/img@2x-8.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/partfolio/mobile/img-8.jpg"
+                      alt="приложение - 'Growing Business'"
+                    />
+                  </picture>
                   <p class="overline">
                     Ресурс предлагает комплексные предложения с разным уровнем функционала и
                     сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании
@@ -476,5 +675,12 @@
         </div>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/mobileMenu.js"></script>
   </body>
 </html>
