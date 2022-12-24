@@ -1,5 +1,5 @@
 :root {
-  --main-font: "Roboto", sans-serif;
+  --main-font: 'Roboto', sans-serif;
   --primary-brand-color: #2196f3;
   --secondary-brand-color: #2f303a;
   --complementary-color: #757575;
@@ -125,7 +125,7 @@ address {
   padding-bottom: 16px;
   line-height: 1.19;
   font-size: 26px;
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   color: var(--primary-brand-color);
 }
@@ -145,7 +145,8 @@ address {
   cursor: pointer;
   transition: background-color var(--transition-main);
 }
-.main-button:hover, .main-button:focus {
+.main-button:hover,
+.main-button:focus {
   background-color: #188ce8;
 }
 
@@ -189,7 +190,8 @@ address {
   height: 609px;
   padding: 40px;
   background-color: #fff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: transform var(--transition-main);
   transition-duration: 450ms;
@@ -225,7 +227,8 @@ address {
   fill: currentColor;
   transition: color var(--transition-main);
 }
-.modal__button_close:focus .modal__svg_close, .modal__button_close:hover .modal__svg_close {
+.modal__button_close:focus .modal__svg_close,
+.modal__button_close:hover .modal__svg_close {
   color: var(--primary-brand-color);
 }
 
@@ -272,7 +275,8 @@ address {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-.modal__field:focus, .modal__field:hover {
+.modal__field:focus,
+.modal__field:hover {
   border-color: var(--primary-brand-color);
 }
 
@@ -283,7 +287,8 @@ address {
   left: 15px;
   transition: fill var(--transition-main);
 }
-.modal__field:focus + .modal__svg, .modal__field:hover + .modal__svg {
+.modal__field:focus + .modal__svg,
+.modal__field:hover + .modal__svg {
   fill: var(--primary-brand-color);
 }
 
@@ -328,7 +333,7 @@ address {
   border: 1px solid var(--dark-color);
   border-radius: 2px;
   background-color: transparent;
-  content: "";
+  content: '';
   cursor: pointer;
   transition: background-color var(--transition-main), border-color var(--transition-main);
 }
@@ -365,7 +370,8 @@ address {
   cursor: pointer;
   transition: color var(--transition-main), background-color var(--transition-main);
 }
-.socials__link:hover, .socials__link:focus {
+.socials__link:hover,
+.socials__link:focus {
   background-color: var(--primary-brand-color);
   color: var(--light-color);
 }
@@ -400,7 +406,8 @@ address {
   cursor: pointer;
   transition: color var(--transition-main);
 }
-.mobile__menu_open:hover, .mobile__menu_open:focus {
+.mobile__menu_open:hover,
+.mobile__menu_open:focus {
   color: var(--primary-brand-color);
 }
 @media screen and (min-width: 768px) {
@@ -416,7 +423,6 @@ address {
 .mobile__menu {
   z-index: 1;
   position: fixed;
-  top: 0;
   left: 0;
   overflow: auto;
   display: flex;
@@ -432,6 +438,7 @@ address {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+
 }
 
 .mobile__container {
@@ -454,7 +461,8 @@ address {
   border: none;
   fill: currentColor;
 }
-.mobile__button_close:hover, .mobile__button_close:focus {
+.mobile__button_close:hover,
+.mobile__button_close:focus {
   color: var(--primary-brand-color);
 }
 
@@ -560,7 +568,8 @@ address {
   letter-spacing: 0.02em;
   transition: color var(--transition-main);
 }
-.navigation__link:hover, .navigation__link:focus {
+.navigation__link:hover,
+.navigation__link:focus {
   color: var(--primary-brand-color);
 }
 
@@ -575,7 +584,7 @@ address {
   height: 4px;
   background: var(--primary-brand-color);
   border-radius: 2px;
-  content: "";
+  content: '';
 }
 
 @media screen and (max-width: 767px) {
@@ -629,33 +638,43 @@ address {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/index/hero/mobile/Header-phone-img.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/index/hero/mobile/Header-phone-img.jpg');
 }
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/index/hero/mobile/Header-phone-img@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/index/hero/mobile/Header-phone-img@2x.jpg');
   }
 }
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/index/hero/tablet/Header-tablet-img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/index/hero/tablet/Header-tablet-img.jpg');
   }
 }
-@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 768px) and (min-resolution: 192dpi),
+  screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/index/hero/tablet/Header-tablet-img@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/index/hero/tablet/Header-tablet-img@2x.jpg');
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/index/hero/desktop/Img-pc.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/index/hero/desktop/Img-pc.jpg');
   }
 }
-@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+  screen and (min-width: 1200px) and (min-resolution: 192dpi),
+  screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/index/hero/desktop/Img-pc@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/index/hero/desktop/Img-pc@2x.jpg');
   }
 }
 
@@ -736,7 +755,8 @@ address {
 }
 
 .team__item {
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -789,7 +809,8 @@ address {
   cursor: pointer;
   transition: color var(--transition-main);
 }
-.customers__link:focus, .customers__link:hover {
+.customers__link:focus,
+.customers__link:hover {
   color: var(--primary-brand-color);
 }
 
@@ -838,10 +859,13 @@ address {
   display: block;
   transition: box-shadow var(--transition-main);
 }
-.examples__link:hover, .examples__link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.examples__link:hover,
+.examples__link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-.examples__link:focus .overline, .examples__link:hover .overline {
+.examples__link:focus .overline,
+.examples__link:hover .overline {
   transform: translateY(0);
 }
 
@@ -852,7 +876,7 @@ address {
   border-bottom: 1px solid #eeeeee;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .examples__text:nth-child(-n+2) {
+  .examples__text:nth-child(-n + 2) {
     height: 142px;
   }
 }
@@ -887,7 +911,7 @@ address {
   margin-right: 8px;
 }
 @media screen and (max-width: 767px) {
-  .filter__item:nth-child(n+4) {
+  .filter__item:nth-child(n + 4) {
     margin-top: 15px;
   }
 }
@@ -902,12 +926,16 @@ address {
   border-radius: 4px;
   background: #f5f4fa;
   cursor: pointer;
-  transition: color var(--transition-main), background-color var(--transition-main), box-shadow var(--transition-main);
+  transition: color var(--transition-main), background-color var(--transition-main),
+    box-shadow var(--transition-main);
 }
-.filter__button_active, .filter__button:hover, .filter__button:focus {
+.filter__button_active,
+.filter__button:hover,
+.filter__button:focus {
   background-color: var(--primary-brand-color);
   color: var(--light-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .overline {
@@ -1001,7 +1029,8 @@ address {
   transition: border-color var(--transition-main);
   outline: none;
 }
-.footer__input:focus, .footer__input:hover {
+.footer__input:focus,
+.footer__input:hover {
   border-color: var(--primary-brand-color);
 }
 .footer__input::placeholder {
@@ -1031,7 +1060,7 @@ address {
   width: 24px;
   margin-left: 10px;
   background-image: url(../images/index/footer/send-icon.png);
-  content: "";
+  content: '';
 }
 
 .footer__form_subscribe {
@@ -1073,7 +1102,8 @@ address {
   display: inline-block;
   transition: color var(--transition-main);
 }
-.address .address__item:focus, .address .address__item:hover {
+.address .address__item:focus,
+.address .address__item:hover {
   color: var(--primary-brand-color);
 }
 .address .address__item:not(:last-child) {
@@ -1088,6 +1118,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
   transition: color var(--transition-main);
 }
-.address .address__link:focus, .address .address__link:hover {
+.address .address__link:focus,
+.address .address__link:hover {
   color: var(--primary-brand-color);
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */
